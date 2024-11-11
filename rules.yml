@@ -1,0 +1,18 @@
+#groups:
+        #  - name: Example
+    #    rules:
+            #      - alert: InstanceDown
+        #expr: up == 0 
+        #        for: 1m
+groups:
+  - name: Alerts
+    rules:
+      - alert: InstanceDown
+        expr: up == 0 
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "NodeExporter Unreachable on {{ $labels.instance }}"
+          description: "Возможно сервис node_exporter упал или сервер недоступен"
+

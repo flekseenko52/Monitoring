@@ -1,9 +1,3 @@
-#groups:
-        #  - name: Example
-    #    rules:
-            #      - alert: InstanceDown
-        #expr: up == 0 
-        #        for: 1m
 groups:
   - name: Alerts
     rules:

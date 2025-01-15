@@ -9,8 +9,8 @@ receivers:
  - name: blackhole
  - name: telegram-test
    telegram_configs:
-    - chat_id: -1002168238383
-      bot_token: 7565636020:AAFGCfJD7yDvwBQVYu7yOQHc98Lgfy4BC1w
+    - chat_id: 
+      bot_token: 
       api_url: "https://api.telegram.org"
       send_resolved: true
       parse_mode: HTML
